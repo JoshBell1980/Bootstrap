@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Starter</title>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Responsive Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">MySite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full-width responsive image -->
+    <div class="container-fluid px-0">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" 
+             class="img-fluid w-100" alt="Nature Banner">
+    </div>
+    <!-- Centered circular image below the main image -->
+    <div class="container text-center my-4">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+             class="rounded-circle img-fluid" style="width:120px; height:120px; object-fit:cover;" 
+             alt="Profile Picture">
+    </div>
+    
+    <div class="container py-5">
+        <h1 class="mb-4">Registration Form</h1>
+        <div class="mb-4">
+            <button class="btn btn-primary me-2">Always Visible</button>
+            <button class="btn btn-secondary d-none d-md-inline-block">Hidden on Small Screens</button>
+        </div>
+        <form>
+            <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                </div>
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password <span class="text-danger">*</span></label>
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="terms" required>
+                <label class="form-check-label" for="terms">
+                    I agree to the terms and conditions
+                </label>
+            </div>
+            <button type="submit" class="btn btn-success w-100">Submit</button>
+        </form>
+
+        <!-- Responsive Bootstrap Table with hard-coded data -->
+        <div class="table-responsive mt-5">
+            <table class="table table-striped table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>Johnson</td>
+                        <td>alice.johnson@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>Smith</td>
+                        <td>bob.smith@email.com</td>
+                    </tr>
+                    <tr>
+                        <td>Carol</td>
+                        <td>Williams</td>
+                        <td>carol.williams@email.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Bootstrap JS Bundle (for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
